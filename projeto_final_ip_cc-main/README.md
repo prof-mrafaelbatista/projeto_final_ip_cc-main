@@ -40,17 +40,17 @@ A estrutura de pastas do projeto é organizada da seguinte forma:
 
 projeto_final_ip_cc/
 ├── app.py                  # Arquivo principal da aplicação Flask
+
 ├── .env.example            # Exemplo do arquivo .env para variáveis de ambiente
-├── requirements.txt        # Lista de dependências Python
-├── static/                 # Arquivos estáticos (CSS, JS, imagens)
-│   ├── css/
-│   │   └── style.css       # Folha de estilo CSS
-│   └── js/
-│       └── script.js       # Scripts JavaScript (se houver)
+
+├── static/                 # Arquivo CSS
+
 ├── templates/              # Templates HTML renderizados pelo Flask
+
 │   ├── index.html          # Página principal da aplicação
-│   └── layout.html         # (Opcional) Template base para herança
+
 ├── .gitignore              # Arquivo para ignorar arquivos e pastas no Git
+
 └── README.md               # Este arquivo README
 Integração com a API do Gemini
 A integração com a API do Gemini é um dos pilares deste projeto. Veja como ela foi implementada:
@@ -163,4 +163,4 @@ def processar_consulta():
     # ...
     return render_template('index.html', response=generated_text) # Ou jsonify
 Esta rota é acessada quando o usuário envia uma consulta. Ela recebe a entrada do usuário, interage com a API do Gemini e retorna a resposta.
-Funções de Interação com Gemini (se separadas):
+
