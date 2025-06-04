@@ -1,0 +1,19 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+
+  <h1>Editar Termo</h1>
+  <form method="POST" action="/edit_termo">
+    <label>Termo existente:</label><br>
+    <input class="form-control" id="termo" name="termo" aria-describedby="emailHelp"><br><br>
+
+    <label>Novo termo:</label><br>
+    <input class="form-control" id="novo_termo" name="novo_termo" aria-describedby="emailHelp"><br><br>
+
+    <label>Nova definição:</label><br>
+    <input class="form-control" id="nova_definicao" name="nova_definicao" aria-describedby="emailHelp"><br><br>
+
+    <input type="submit" class="btn btn-primary" value="Atualizar">
+  </form>
+
+
+{% endblock %}

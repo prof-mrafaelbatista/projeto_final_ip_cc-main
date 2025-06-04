@@ -1,0 +1,112 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+
+<h1>Fundamentos da Progamação</h1>
+
+<h3>Estruturas de Seleção</h3>
+<p>As estruturas de seleção servem para tomar decisões no código, ou seja, executar certos blocos de código dependendo de uma condição. Em Python, usamos principalmente:</p>
+<ul>
+    <li>If</li>
+    <li>Elif</li>
+    <li>Else</li>
+</ul>
+<p>Exemplo:<br>
+
+idade = 18<br>
+
+if idade >= 18:<br>
+    print("Você é maior de idade.")<br>
+else:<br>
+    print("Você é menor de idade.")<br></p>
+
+<h3>Estruturas de Repetição</h3>
+<p>As estruturas de repetição permitem executar um bloco de código várias vezes, com base em uma condição ou sequência de valores. Principais tipos em Python:</p>
+
+<ul>
+    <li>For(laço com contador ou para percorrer listas)</li>
+    <li>While (laço com condição)</li>
+</ul>
+<p>Exemplo For:<br>
+for i in range(5):  # Vai ser mostrado na tela os números de 0 a 5<br>
+    print(i)<br>
+</p>
+
+<p>Exemplo While:<br>
+contador = 0<br>
+while contador < 5:<br>
+    print(contador)<br>
+    contador += 1<br>
+</p>
+
+
+<h3>Vetores e matrizes</h3>
+
+<ul>
+    <li>FVetores (ou listas) são estruturas que armazenam vários elementos em uma única variável.</li>
+    <li>Matrizes (ou listas de listas) são listas dentro de listas, como uma tabela (linhas e colunas).</li>
+</ul>
+<p>Exemplo Vetor:<br>
+frutas = ["maçã", "banana", "laranja"]<br>
+print(frutas[0])  # imprime "maçã"<br>
+</p>
+<p>Exemplo Matriz<br>
+matriz = [<br>
+    [1, 2, 3],<br>
+    [4, 5, 6]<br>
+]
+print(matriz[1][2])<br>
+</p>
+
+
+<h3>Funções e procedimentos</h3>
+<p>Funções são blocos de código reutilizáveis que recebem entradas (parâmetros), realizam algum processamento e retornam um resultado.<br>
+    Procedimentos são funções que não retornam valores, apenas executam ações (como exibir algo).</p>
+
+<p>Exemplo Função:<br>
+
+def somar(a, b):<br>
+return a + b<br>
+
+resultado = somar(3, 4)<br>
+print(resultado)<br>
+</p>
+
+<p>Exemplo Procedimento:
+
+def exibir_mensagem():<br>
+    print("Olá, seja bem-vindo!")<br>
+
+exibir_mensagem()<br>
+</p>
+
+<h3>Tratamento de exceções em Python</h3>
+<p>Exceções são erros que ocorrem durante a execução de um programa. Se não forem tratadas, elas fazem o programa parar com uma mensagem de erro.</p>
+<ul>
+    <li>Try -> Tenta executar um bloco de código</li>
+    <li>Except -> Executa um bloco alternativo se um erro ocorrer</li>
+    <li>Else -> Executa se nenhuma exceção ocorrer no bloco try</li>
+    <li>Finally -> Executa sempre, com ou sem erro</li>
+</ul>
+<p>Exemplo Try e Except:<br>
+try:<br>
+    numero = int(input("Digite um número: "))<br>
+    resultado = 10 / numero<br>
+    print("Resultado:", resultado)<br>
+except ZeroDivisionError:<br>
+    print("Erro: divisão por zero não é permitida.")<br>
+except ValueError:<br>
+    print("Erro: você não digitou um número válido.")<br>
+</p>
+
+<p>Exemplo Else e Finally<br>
+try:<br>
+    n = int(input("Digite um número: "))<br>
+except ValueError:<br>
+    print("Isso não é um número.")<br>
+else:<br>
+    print("Você digitou o número:", n)<br>
+finally:<br>
+    print("Fim do programa.")<br>
+</p>
+
+{% endblock %}

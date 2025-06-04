@@ -1,0 +1,371 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #092f55;
+    --secondary-color: #09507e;
+    --accent-color: #2ecc71;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --white: #ffffff;
+    --error-color: #e74c3c;
+    --success-color: #27ae60;
+    --border-radius: 5px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Inicio estrutura do CSS */
+
+#estrutura_selecao {
+    font-weight: bold;
+    background-color: #699fc3;
+    color: black;
+    border-radius: 5px;
+    left: auto;
+    width: 1250px;
+}
+
+#estrutura_selecao:hover {
+    background-color: #7095b1;
+    cursor: pointer;
+}
+
+#estrutura_repeticao {
+    font-weight: bold;
+    background-color: #699fc3;
+    color: black;
+    border-radius: 5px;
+    left:auto;
+    width: 1250px;
+}
+
+#estrutura_repeticao:hover {
+    background-color: #5a8bb0;
+    cursor: pointer;
+}
+
+#vetores_matrizes {
+    font-weight: bold;
+    background-color: #699fc3;
+    color: black;
+    border-radius: 5px;
+    left: auto;
+    width: 1250px;
+}
+
+#vetores_matrizes:hover {
+    background-color: #5a8bb0;
+    cursor: pointer;
+}
+
+#funcoes_procedimentos {
+    font-weight: bold;
+    background-color: #699fc3;
+    color: black;
+    border-radius: 5px;
+    left: auto;
+    width: 1250px;
+}
+
+#funcoes_procedimentos:hover {
+    background-color: #5a8bb0;
+    cursor: pointer;
+}
+
+#tratamento_excecoes {
+    font-weight: bold;
+    background-color: #699fc3;
+    color: black;
+    border-radius: 5px;
+    left: auto;
+    width: 1250px;
+}
+
+#tratamento_excecoes:hover {
+    background-color: #5a8bb0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset e Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: white;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}
+
+
+/* Tipografia */
+h1, h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h5 {
+    color: black;
+    
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+/* Chat Bot */
+
+#prompt {
+    padding: 15px;
+    background-color: black;
+}
+
+.chat-container {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.chat-history {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+    transition: var(--transition);
+}
+
+.message:hover {
+    transform: translateX(5px);
+}
+
+.resposta {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--accent-color);
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Glossário */
+.glossario-lista {
+    list-style: none;
+}
+
+.glossario-item {
+    background-color: var(--white);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.glossario-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Código */
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+code {
+    background-color: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Mensagens */
+.message-box {
+    padding: 12px;
+    border-radius: var(--border-radius);
+    margin: 10px 0;
+}
+
+.error-message {
+    background-color: #fde8e8;
+    color: var(--error-color);
+    border-left: 4px solid var(--error-color);
+}
+
+.success-message {
+    background-color: #e8f8e8;
+    color: var(--success-color);
+    border-left: 4px solid var(--success-color);
+}
+
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .chat-history,
+    .message,
+    .resposta {
+        padding: 10px;
+    }
+    
+    .equipe-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .membro-equipe {
+        margin-bottom: 20px;
+    }
+}

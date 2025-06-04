@@ -1,0 +1,27 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+<body>
+    <h1>Chat com Assistente Virtual</h1>
+
+    <form action="{{ url_for('chat_bot_form')}}" method="post">
+        <label for="prompt">Digite sua pergunta:</label><br>
+        <textarea name="prompt" id="prompt" required></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    {% if historico_chat %}
+    <div class="chat-history">
+        <h2>Histórico do Chat</h2>
+        {% for message in historico_chat %}
+        <div class="message">
+            <p><strong>Você:</strong> {{ message.prompt }}</p>
+            <p><strong>Assistente:</strong> {{ message.resposta }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+
+</body>
+{% endblock %}
+
